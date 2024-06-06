@@ -37,7 +37,7 @@
 
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/download.jpeg)">
+      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/raket.jpeg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/ginting.jpeg)">
+      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/gambar.jpg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
@@ -68,7 +68,7 @@
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                    <p class="intro-title-top">Badminton Jaya
+                    <p class="intro-title-top">Badminton SMASH !!!
                     </p>
                     <h1 class="intro-title mb-4 ">
                       <span class="color-b">Kurangi berat badanmu dengan bermain badminton
