@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DaftarBookingController;
 use App\Http\Controllers\PengelolaController;
-use App\Models\Pengelola;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -41,17 +42,6 @@ Route::prefix('/admin')->namespace('App\Http\Controllers')->group(function(){
     Route::post('/Lapangan/update/{id}', 'LapanganController@update')->name('updatelapangan');
 });
 
-
-Route::get('/booking', [BookingController::class, 'index']);
-
-Route::get('/daftarbooking', [DaftarBookingController::class, 'index'])->name('daftarbookindex');
-Route::post('/daftarbooking/{id}', [DaftarBookingController::class, 'update'])->name('editbooking');
-
-
-Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
-
-
-
 Route::prefix('/pengelola')->namespace('App\Http\Controllers')->group(function(){
     Route::match(['post', 'get'],'login', [PengelolaController::class, 'login']);
     Route::get('index', 'PengelolaController@index');
@@ -60,4 +50,17 @@ Route::prefix('/pengelola')->namespace('App\Http\Controllers')->group(function()
     Route::post('/booking/terima/{id}', [PengelolaController::class, 'terimabooking'])->name('terimabooking');
     Route::post('/booking/tolak/{id}', [PengelolaController::class, 'tolakbooking'])->name('tolakbooking');
 });
+
+Route::get('/user/register', [UserController::class, 'showRegisterForm'])->name('user.register');
+Route::post('/user/register', [UserController::class, 'register']);
+Route::get('/user/login', [UserController::class, 'showLoginForm'])->name('user.login');
+Route::post('/user/login', [UserController::class, 'login']);
+Route::post('/user/logout', [UserController::class, 'logout'])->name('user.logout');
+
+
+
+Route::get('/booking', [BookingController::class, 'index']);
+Route::get('/daftarbooking', [DaftarBookingController::class, 'index'])->name('daftarbookindex');
+Route::post('/daftarbooking/{id}', [DaftarBookingController::class, 'update'])->name('editbooking');
+Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
 

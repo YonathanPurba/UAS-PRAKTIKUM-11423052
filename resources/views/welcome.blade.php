@@ -37,7 +37,7 @@
 
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/raket.jpeg)">
+      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/badmin.jpg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
@@ -45,11 +45,8 @@
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                    <p class="intro-title-top">Badminton Jaya
-                    </p>
-                    <h1 class="intro-title mb-4 ">
-                      <span class="color-b">Kurangi berat badanmu dengan bermain badminton
-                    </h1>
+                    <p class="intro-title-top">Selamat Datang di Badminton Jaya</p>
+                    <h1 class="intro-title mb-4">Raih Kesehatan dan Kebugaran dengan Bermain Badminton</h1>
                     <p class="intro-subtitle intro-price">
                       <a href="/booking"><span class="price-a">Booking Disini</span></a>
                     </p>
@@ -68,11 +65,8 @@
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                    <p class="intro-title-top">Badminton SMASH !!!
-                    </p>
-                    <h1 class="intro-title mb-4 ">
-                      <span class="color-b">Kurangi berat badanmu dengan bermain badminton
-                    </h1>
+                    <p class="intro-title-top">Bergabunglah dengan Badminton SMASH !!!</p>
+                    <h1 class="intro-title mb-4">Raih Kesehatan dan Kebugaran dengan Bermain Badminton</h1>
                     <p class="intro-subtitle intro-price">
                       <a href="/booking"><span class="price-a">Booking Disini</span></a>
                     </p>
@@ -96,3 +90,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
    @include('layanan')
+
+</body>
+
+</html>
