@@ -67,7 +67,7 @@
 
   <div class="intro intro-carousel swiper position-relative">
     <div class="swiper-wrapper">
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(../assets/img/download.jpeg)">
+      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(../assets/img/badmin.jpg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
@@ -87,7 +87,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(../assets/img/ginting.jpeg)">
+      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(../assets/img/gambar.jpg)">
         <div class="overlay overlay-a"></div>
         <div class="intro-content display-table">
           <div class="table-cell">
