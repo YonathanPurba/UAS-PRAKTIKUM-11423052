@@ -35,7 +35,7 @@ class LoginController extends Controller
         return view('admin.login');
     }
 
-    public function LoginUser(Request $request)
+    public function LoginMember(Request $request)
     {
         if ($request->isMethod('POST')) {
             $data = $request->all();
@@ -53,16 +53,16 @@ class LoginController extends Controller
             ];
         
             $this->validate($request, $required, $message);
-            if (Auth::guard('user')->attempt(['username' => $data['username'], 'password' => $data['password']])) {
-                return redirect('/user/index');
+            if (Auth::guard('member')->attempt(['username' => $data['username'], 'password' => $data['password']])) {
+                return redirect('/member/index');
             } else {
                 return redirect()->back()->with('error_message', 'invalid username or password');
             }
         }
-        return view('user.login');
+        return view('member.login');
     }
 
-    public function RegisterUser(Request $request)
+    public function RegisterMember(Request $request)
 {
     if ($request->isMethod('POST')) {
         $data = $request->all();
@@ -106,9 +106,9 @@ class LoginController extends Controller
             'updated_at' => now(),
         ]);
 
-        return redirect('/user/login')->with('success_message', 'Registrasi Sukses. Silahkan login sebagai user');
+        return redirect('/member/login')->with('success_message', 'Registrasi Sukses. Silahkan login sebagai member');
     }
-    return view('user.register');
+    return view('member.registrasi');
 }
 
 

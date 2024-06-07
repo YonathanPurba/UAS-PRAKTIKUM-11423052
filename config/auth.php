@@ -50,10 +50,11 @@ return [
             'driver' => 'session',
             'provider' => 'pengelolas',
         ],
-        'user' => [
+
+        'member' => [
             'driver' => 'session',
             'provider' => 'penggunas',
-        ]
+        ],
     ],
 
     /*
