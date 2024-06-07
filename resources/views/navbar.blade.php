@@ -12,13 +12,13 @@
             Login
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ route('user.login') }}">Login User</a></li>
+            <li><a class="dropdown-item" href="/user/login">Login User</a></li>
             <li><a class="dropdown-item" href="/admin/login">Login Admin</a></li>
             <li><a class="dropdown-item" href="/pengelola/login">Login Pengelola</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('user.register') }}">Register</a>
+          <a class="nav-link" href="/user/register">Register</a>
         </li>
       </ul>
     </div>

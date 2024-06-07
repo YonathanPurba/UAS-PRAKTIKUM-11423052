@@ -162,7 +162,7 @@
                 $('#bookingModalLabel').text('Pesan Lapangan: ' + namaLapangan);
                 $('#bookingModal').modal('show');
             @else
-                window.location.href = "{{ route('user.login') }}";
+                window.location.href = "/user/login";
             @endif
         }
 

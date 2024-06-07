@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DaftarBookingController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PengelolaController;
 use App\Http\Controllers\UserController;
 
@@ -51,13 +52,12 @@ Route::prefix('/pengelola')->namespace('App\Http\Controllers')->group(function()
     Route::post('/booking/tolak/{id}', [PengelolaController::class, 'tolakbooking'])->name('tolakbooking');
 });
 
-Route::get('/user/register', [UserController::class, 'showRegisterForm'])->name('user.register');
-Route::post('/user/register', [UserController::class, 'register']);
-Route::get('/user/login', [UserController::class, 'showLoginForm'])->name('user.login');
-Route::post('/user/login', [UserController::class, 'login']);
-Route::post('/user/logout', [UserController::class, 'logout'])->name('user.logout');
-
-
+Route::prefix('/user')->namespace('App\Http\Controllers')->group(function(){
+    Route::match(['post', 'get'],'login', [LoginController::class, 'LoginUser'])->name('loginmemb');
+    Route::match(['post', 'get'], 'register', [LoginController::class, 'RegisterUser'])->name('registermemb');
+    Route::get('index', 'MemberController@index');
+    Route::get('logout', 'MemberController@logoutmember');
+});
 
 Route::get('/booking', [BookingController::class, 'index']);
 Route::get('/daftarbooking', [DaftarBookingController::class, 'index'])->name('daftarbookindex');
