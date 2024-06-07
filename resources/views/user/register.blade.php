@@ -38,7 +38,7 @@
                     <div class="card shadow-2-strong" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
 
-                            <h3 class="mb-5">Registrasi Member</h3>
+                            <h3 class="mb-5">Registrasi User</h3>
 
                             <form action="{{ route('registermemb') }}" method="POST">
                                 @csrf
